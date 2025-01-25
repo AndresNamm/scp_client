@@ -1,7 +1,7 @@
-# scp_client
+# scp_api_client
 
 ## Description
-`scp_client` is a Python package that provides utilities to connect to different forestry APIs
+`scp_api_client` is a Python package that provides utilities to connect to different forestry APIs
 
 
 
@@ -9,14 +9,14 @@
 You can install the package using pip:
 
 ```bash
-pip install scp_client
+pip install scp_api_client
 ```
 
 ## Usage
-Here is an example of how to use the `scp_client` package:
+Here is an example of how to use the `scp_api_client` package:
 
 ```python
-from scp_client import SCPClient
+from scp_api_client import SCPClient
 
 
 

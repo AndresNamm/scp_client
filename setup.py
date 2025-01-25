@@ -1,10 +1,10 @@
 from setuptools import setup
 
 setup(
-    name='scp_client',
+    name='scp_api_client',
     version='0.1.0',
     description='A Python package for SCP client functionality',
-    url='https://github.com/AndresNamm/scp_client',
+    url='https://github.com/AndresNamm/scp_api_client',
     author='Andres Namm',
     author_email='andres.namm.001@gmail.com',
     license='BSD 2-clause',
