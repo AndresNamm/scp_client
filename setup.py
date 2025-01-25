@@ -1,0 +1,24 @@
+from setuptools import setup
+
+setup(
+    name='scp_client',
+    version='0.1.0',
+    description='A Python package for SCP client functionality',
+    url='https://github.com/AndresNamm/scp_client',
+    author='Andres Namm',
+    author_email='andres.namm@example.com',
+    license='BSD 2-clause',
+    packages=['scp_client'],
+    install_requires=['mpi4py>=2.0', 'numpy'],
+    classifiers=[
+        'Development Status :: 1 - Planning',
+        'Intended Audience :: Developers',
+        'License :: OSI Approved :: BSD License',
+        'Operating System :: OS Independent',
+        'Programming Language :: Python :: 3',
+        'Programming Language :: Python :: 3.6',
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+    ],
+)
