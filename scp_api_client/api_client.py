@@ -16,7 +16,7 @@ ENV_URLS = {
 
 class ScpApiClient:
     def __init__(self, api_key: str):
-        self.environment = os.getenv('ENVIRONMENT', 'dev')
+        self.environment = os.getenv('ENVIRONMENT', 'prod')
         self.base_url = ENV_URLS[self.environment]
         self.api_key = api_key
         self.logger = logging.getLogger(__name__)
