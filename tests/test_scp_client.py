@@ -1,5 +1,5 @@
 import unittest
-from scp_client.api_client import ScpApiClient
+from scp_api_client.api_client import ScpApiClient
 
 class TestSCPClient(unittest.TestCase):
 
@@ -11,4 +11,3 @@ class TestSCPClient(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-
