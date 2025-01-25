@@ -1,18 +1,14 @@
 import unittest
-from scp_client import SCPClient
+from scp_client.api_client import ScpApiClient
 
 class TestSCPClient(unittest.TestCase):
 
     def setUp(self):
-        self.client = SCPClient(hostname='example.com', username='user', password='password')
+        self.client = ScpApiClient('test_key')
 
-    def test_upload(self):
-        result = self.client.upload('local_file.txt', 'remote_file.txt')
-        self.assertTrue(result)
-
-    def test_download(self):
-        result = self.client.download('remote_file.txt', 'local_file.txt')
-        self.assertTrue(result)
+    def test_init(self):
+        self.assertEqual(self.client.api_key, 'test_key')
 
 if __name__ == '__main__':
     unittest.main()
+

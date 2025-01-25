@@ -6,10 +6,10 @@ setup(
     description='A Python package for SCP client functionality',
     url='https://github.com/AndresNamm/scp_client',
     author='Andres Namm',
-    author_email='andres.namm@example.com',
+    author_email='andres.namm.001@gmail.com',
     license='BSD 2-clause',
     packages=['scp_client'],
-    install_requires=['mpi4py>=2.0', 'numpy'],
+    install_requires=[ 'numpy','requests'],
     classifiers=[
         'Development Status :: 1 - Planning',
         'Intended Audience :: Developers',
