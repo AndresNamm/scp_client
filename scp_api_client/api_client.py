@@ -4,6 +4,7 @@ import os
 from datetime import datetime
 import json
 
+DEFAULT_TIMEOUT = 200
 
 logger = logging.getLogger(__name__)
 
@@ -82,3 +83,10 @@ class ScpApiClient:
         except Exception as e:
             self.logger.error("Failed to upload data to API: %s", str(e))
             raise
+
+    def trigger_sync(self,start_date:datetime,end_date:datetime,timeout=DEFAULT_TIMEOUT):
+        start_formated = start_date.strftime("%Y-%m-%d")
+        end_formated = end_date.strftime("%Y-%m-%d")
+        url = f"{self.base_url}/waybill/update-waybills"
+        response = requests.post(url, headers=self._headers(), data=json.dumps({"startDate":start_formated, "endDate":end_formated}), timeout=timeout)
+        return response.json()
