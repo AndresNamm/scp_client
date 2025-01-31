@@ -22,9 +22,8 @@ jobs:
     
     - name: Build package
       run: python setup.py sdist bdist_wheel
-    
-    - name: Publish to PyPI
-      env:
-        TWINE_USERNAME: andres_namm
-        TWINE_PASSWORD: ${{ secrets.PYPI_API_TOKEN }}
-      run: twine upload dist/*
+
+    - name: Publish release distributions to PyPI
+      uses: pypa/gh-action-pypi-publish@release/v1
+      with:
+        packages-dir: dist/
