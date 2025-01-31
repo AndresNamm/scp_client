@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='scp_api_client',
-    version='0.4.0',
+    version='0.5.0',
     description='A Python package for Supply Chain Proof client functionality',
     url='https://github.com/AndresNamm/scp_api_client',
     author='Andres Namm',
